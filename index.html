@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rachel Zhang - Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .social-links {
+            margin-bottom: 2rem;
+        }
+
+        .social-links a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #2980b9;
+        }
+
+        section {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .project-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-card a {
+            color: #3498db;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="your-photo.jpg" alt="Rachel Zhang" class="profile-img">
+            <h1>Rachel Zhang</h1>
+            <div class="subtitle">Data Scientist</div>
+            <div class="social-links">
+                <a href="https://github.com/zyx909" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/yuxiuzhang/" target="_blank">LinkedIn</a>
+                <a href="mailto:yuxiu909@gmail.com">Email</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>About Me</h2>
+            <p>
+                A good life lover! I am passionate about data science, artificial intelligence, and creating innovative solutions that make a difference. 
+                With expertise in machine learning and data analysis, I enjoy turning complex data into meaningful insights and building AI-powered applications.
+            </p>
+        </section>
+
+        <section>
+            <h2>AI Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Rachel's YouTube Processor</h3>
+                    <p>An AI-powered YouTube video processor that analyzes and summarizes video content, extracts key insights, and generates engaging descriptions using advanced NLP techniques.</p>
+                    <a href="https://github.com/zyx909/youtube-processor" target="_blank">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <h3>Trend Dictionary</h3>
+                    <p>A dynamic AI tool that analyzes social media trends and creates a living dictionary of contemporary language and expressions, helping users stay current with evolving digital communication.</p>
+                    <a href="https://github.com/zyx909/trend-dictionary" target="_blank">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <h3>My New Home</h3>
+                    <p>An AI-enhanced home photo collection and management system that automatically organizes, tags, and creates beautiful visual stories from your home photos using computer vision and machine learning.</p>
+                    <a href="https://github.com/zyx909/my-new-home" target="_blank">View Project →</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html> 
